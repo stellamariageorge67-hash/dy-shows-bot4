@@ -1,7 +1,7 @@
 import { Router, type IRouter } from "express";
-import healthRouter from "./health.js";
-import contentRouter from "./content.js";
-import webhookRouter from "./webhook.js";
+import healthRouter from "./health.ts";
+import contentRouter from "./content.ts";
+import webhookRouter from "./webhook.ts";
 
 const router: IRouter = Router();
 
