@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { supabase } from "../lib/supabase";
-import { sendFileToUser } from "./lib/bot.js";
+import { supabase } from "./supabase.ts";
+import { sendFileToUser } from "./bot.ts";
 
 const router = Router();
 
