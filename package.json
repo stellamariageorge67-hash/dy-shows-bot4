@@ -7,8 +7,7 @@
     "node": ">=20"
   },
   "scripts": {
-  "start": "tsx index.ts",
-  "build": "npm install"
+  "start": "node --import tsx/esm src/index.ts"
 },
   "dependencies": {
     "@supabase/supabase-js": "^2.103.2",
