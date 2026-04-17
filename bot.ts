@@ -1,7 +1,7 @@
 import { Telegraf, session, Markup } from "telegraf";
 import type { Context } from "telegraf";
-import { supabase } from "./supabase.js";
-import { logger } from "./logger.js";
+import { supabase } from "./supabase";
+import { logger } from "./logger";
 
 const BOT_TOKEN = process.env.BOT_TOKEN!;
 const ADMIN_ID = parseInt(process.env.ADMIN_ID || "0", 10);
