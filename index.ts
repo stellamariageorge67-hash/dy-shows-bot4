@@ -11,10 +11,7 @@ const PORT = process.env.PORT || 10000;
 app.use(express.json());
 app.use(router);
 
-// Start the server
 app.listen(PORT, () => {
-  console.log(🚀 Server is running on port ${PORT});
-  
-  // This keeps the bot alive
-  console.log("🤖 Bot is starting...");
+  console.log("Server is running on port " + PORT);
+  console.log("Bot is starting...");
 });
