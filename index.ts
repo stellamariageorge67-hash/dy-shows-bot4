@@ -13,5 +13,9 @@ app.use(router);
 
 app.listen(PORT, () => {
   console.log("Server is running on port " + PORT);
-  console.log("Bot is starting...");
+  
+  // The ONLY place the bot launches
+  bot.launch()
+    .then(() => console.log("Telegram Bot connection established!"))
+    .catch((err) => console.error("Bot launch failed: ", err));
 });
