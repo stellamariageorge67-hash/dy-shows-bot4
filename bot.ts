@@ -245,15 +245,3 @@ export async function sendFileToUser(userId: number, fileId: string, quality: st
     throw err;
   }
 }
-// --- START THE BOT ---
-bot.launch()
-  .then(() => {
-    console.log("✅ Telegram connection established!");
-  })
-  .catch((err) => {
-    console.error("❌ Failed to launch bot:", err);
-  });
-
-// Graceful shutdown
-process.once('SIGINT', () => bot.stop('SIGINT'));
-process.once('SIGTERM', () => bot.stop('SIGTERM'));
